@@ -47,7 +47,7 @@
                     	<a href="<?php echo base_url('Ptmada/detail_perusahaan/' . $dt['kd_perusahaan']) ?>">
                           <button class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="auto" title="Lihat Data : <?php echo $dt['nama_perusahaan'] ?>">
                             <i class="fa fa-eye"></i>
-                          </button>123
+                          </button>
                         </a>
 
                         <!-- Tombol Edit -->
