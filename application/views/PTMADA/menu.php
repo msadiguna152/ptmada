@@ -19,7 +19,7 @@
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
         <li class="dropdown tasks-menu">
-          <a href="<?php echo base_url() ?>login/logout" title="Logout">
+          <a data-toggle="modal" data-target="#myModal">
             <i class="fa fa-power-off"></i> &nbsp <b>Logout</b>
           </a>
         </li>
@@ -107,3 +107,25 @@
   </section>
   <!-- /.sidebar -->
 </aside>
+
+<!-- Modal logout-->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Konfirmasi Logout</h4>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <a href="<?php echo base_url() ?>login/logout"><button type="button" class="btn btn-danger">Logout</button></a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
