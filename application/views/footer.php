@@ -162,6 +162,34 @@
         'info': true,
         'autoWidth': false
       })
+      $('#example4').DataTable({
+        'paging': true,
+        'lengthChange': true,
+        'searching': true,
+        'ordering': true,
+        'info': true,
+        'autoWidth': true,
+        "language": {
+            "lengthMenu": "Tampilkan _MENU_ Data Perhalaman",
+            "info": "Halaman _PAGE_ Dari _PAGES_ Halaman",
+            "infoEmpty": "Data Tidak Tersedia",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "infoEmpty":      "Menampilkan 0 Ke 0 Dari 0 Data",
+            "infoFiltered":   "(filtered from _MAX_ total entries)",
+            "infoPostFix":    "",
+            "thousands":      ",",
+            "loadingRecords": "Loading...",
+            "processing":     "Processing...",
+            "search":         "Pencarian :",
+            "zeroRecords":    "Data Tidak Tersedia",
+            "paginate": {
+                "first":      "Pertaman",
+                "last":       "Terakhir",
+                "next":       "Selanjutnya",
+                "previous":   "Sebelumnya"
+            },
+        }
+      })
     })
   </script>
 
