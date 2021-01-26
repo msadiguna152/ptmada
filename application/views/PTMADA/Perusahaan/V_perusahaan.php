@@ -30,7 +30,8 @@
                   <th style="text-align: center;">Nama Pimpinan</th>
                   <th style="text-align: center;">Alamat</th>
                   <th style="text-align: center;">View</th>
-                  <th style="text-align: center;width: 60px;">Aksi</th>
+                  <th style="text-align: center;">Edit</th>
+                  <th style="text-align: center;">Hapus</th>
                 </tr>
               </thead>
               <tbody>
@@ -43,21 +44,23 @@
                     <td><?php echo $dt['nama_perusahaan']; ?></td>
                     <td><?php echo $dt['nama_direktur']; ?></td>
                     <td><?php echo $dt['alamat']; ?></td>
-                    <td><!-- Tombol Lihat -->
+                    <td style="text-align: center;">
+                      <!-- Tombol Lihat -->
                       <a href="<?php echo base_url('Ptmada/detail_perusahaan/' . $dt['kd_perusahaan']) ?>">
                           <button class="btn btn-secondary btn-sm" data-toggle="tooltip" data-placement="auto" title="Lihat Data : <?php echo $dt['nama_perusahaan'] ?>">
                             <i class="fa fa-eye"></i>
                           </button>
-                        </a></td>
-                    <td>
-                    	
-
-                        <!-- Tombol Edit -->
+                        </a>
+                    </td>
+                    <td style="text-align: center;">
+                      <!-- Tombol Edit -->
                         <a href="<?php echo site_url('Ptmada/edit_perusahaan/' . $dt['kd_perusahaan']); ?>">
                           <button class="btn btn-success btn-sm " data-toggle="tooltip" data-placement="auto" title="Edit Data Perusahaan : <?php echo $dt['nama_perusahaan'] ?>">
                             <i class="fa fa-edit"></i>
                           </button>
                         </a>
+                    </td>
+                    <td style="text-align: center;">
                         <!-- Tombol Delete -->
                         <a href="<?php echo site_url('Ptmada/hapus_perusahaan/' . $dt['kd_perusahaan']); ?>" onclick="return confirm('Apa Anda Yakin Akan Menghapus Data <?php echo $dt['nama_perusahaan'] ?>?')">
                           <button class="btn btn-danger btn-sm " data-toggle="tooltip" data-placement="auto" title="Hapus Data Perusahaan : <?php echo $dt['nama_perusahaan'] ?>">
@@ -70,16 +73,6 @@
                 }
                 ?>
               </tbody>
-              <tfoot>
-                <tr>
-                  <th style="text-align: center;">No</th>
-                  <th style="text-align: center;">Nama Perusahaan</th>
-                  <th style="text-align: center;">Nama Pimpinan</th>
-                  <th style="text-align: center;">Alamat</th>
-                  <th></th>
-                  <th style="text-align: center;">Aksi</th>
-                </tr>
-              </tfoot>
             </table>
           </div>
           <!-- /.box-body -->
